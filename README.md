@@ -1,12 +1,51 @@
-# React + Vite
+# Ralphael Alcober — Personal Portfolio
+Welcome to my personal developer portfolio! This project showcases who I am, the work I've done, and the skills I bring as a Computer Engineering student and web developer. Built using modern web technologies, this site is fully responsive and designed for performance and clarity.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Features
+Smooth scroll navigation with a responsive navbar
 
-Currently, two official plugins are available:
+Dynamic sections including About, Skills, Projects, and Contact
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Stylish animations using Tailwind CSS and custom CSS variables
 
-## Expanding the ESLint configuration
+Contact form with toast notification and contact information
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Dark mode-ready design structure
+
+## 🛠️ Tech Stack
+React — Functional components & hooks
+
+Tailwind CSS — Utility-first CSS styling
+
+Lucide React — Icon library for modern icons
+
+Framer Motion — Simple and smooth animations
+
+Custom Hooks — Toast notifications
+
+Responsive Design — Mobile-first layout using CSS Grid and Flexbox
+
+## 📁 Folder Structure
+/public         — Static assets (images, icons, etc.)
+/src
+  /components   — Reusable React components (Navbar, ContactSection, etc.)
+  /pages        — Page sections (Home, About, Skills, etc.)
+  /lib          — Utility functions (e.g. cn for class merging)
+  /hooks        — Custom hooks (useToast for notifications)
+
+## 🚀 Getting Started
+To run this project locally:
+git clone https://github.com/23alcor/your-portfolio.git
+cd your-portfolio
+npm install
+npm run dev
+Make sure you have Node.js and npm installed on your machine.
+
+## 📬 Contact
+If you'd like to reach out, collaborate, or ask about my work:
+
+📧 Email: ralcober01@manhattan.edu
+
+💼 LinkedIn: linkedin.com/in/ralphalc
+
+### Thanks for visiting my portfolio!
