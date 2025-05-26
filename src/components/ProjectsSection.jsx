@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: "Legendary Motorsports Clone",
     description: "A clone of a website found in the video game GTA V.",
-    image: "/projects/project1.png",
+    image: "/Portfolio/projects/project1.png",
     tags: ["HTML, CSS, Javascript"],
     demoUrl: "https://23alcor.github.io/Legendary-Motorosports-Clone/",
     githubUrl:
@@ -16,7 +16,7 @@ const projects = [
     title: "Tic Tac Toe",
     description:
       "My first project using React to make the simple Tic Tac Toe game.",
-    image: "/projects/project2.png",
+    image: "/Portfolio/projects/project2.png",
     tags: ["Javascript, React"],
     demoUrl: "https://23alcor.github.io/TicTacToe/",
     githubUrl: "https://github.com/23alcor/TicTacToe",
@@ -26,7 +26,7 @@ const projects = [
     title: "ToDo App",
     description:
       "ToDo app using React and make it as close to real life product.",
-    image: "/projects/project3.png",
+    image: "/Portfolio/projects/project3.png",
     tags: ["Javascript, React"],
     demoUrl: "https://23alcor.github.io/UniversityToDo/",
     githubUrl: "https://github.com/23alcor/UniversityToDo",
