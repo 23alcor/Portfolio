@@ -4,7 +4,7 @@ const projects = [
   {
     id: 1,
     title: "Legendary Motorsports Clone",
-    description: "A clone of a website found in the video game GTA V.",
+    description: "A front-end clone of GTA V’s Legendary Motorsport website built using HTML, CSS, and JavaScript. Features custom vehicle data sourced from in-game screenshots, showcasing skills in responsive UI design, DOM manipulation, and dynamic data rendering without frameworks..",
     image: "/Portfolio/projects/project1.png",
     tags: ["HTML, CSS, Javascript"],
     demoUrl: "https://23alcor.github.io/Legendary-Motorosports-Clone/",
@@ -13,19 +13,19 @@ const projects = [
   },
   {
     id: 2,
-    title: "Tic Tac Toe",
+    title: "Job Board Api",
     description:
-      "My first project using React to make the simple Tic Tac Toe game.",
+      "A full-stack job board web app built with React, Tailwind CSS, Node.js, and PostgreSQL, featuring real-time search, RESTful API integration, and responsive design. Demonstrates proficiency in full-stack development, database design, and deploying modern web applications using GitHub Pages and Render..",
     image: "/Portfolio/projects/project2.png",
-    tags: ["Javascript, React"],
-    demoUrl: "https://23alcor.github.io/TicTacToe/",
-    githubUrl: "https://github.com/23alcor/TicTacToe",
+    tags: ["Node.js, React, REST API, Postgresql"],
+    demoUrl: "https://23alcor.github.io/job-board-project/",
+    githubUrl: "https://github.com/23alcor/job-board-project",
   },
   {
     id: 3,
     title: "ToDo App",
     description:
-      "ToDo app using React and make it as close to real life product.",
+      "A dynamic job board application built with React, featuring real-time job search, API integration, and responsive design. Demonstrates proficiency in component-based architecture, state management with hooks, and modern UI development using Tailwind CSS.",
     image: "/Portfolio/projects/project3.png",
     tags: ["Javascript, React"],
     demoUrl: "https://23alcor.github.io/UniversityToDo/",

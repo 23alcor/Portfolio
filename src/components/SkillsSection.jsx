@@ -5,6 +5,7 @@ const skills = [
   { name: "HTML/CSS", level: 95, category: "frontend" },
   { name: "JavaScript", level: 90, category: "frontend" },
   { name: "React", level: 80, category: "frontend" },
+  { name: "Tailwind CSS", level: 80, category: "frontend" },
   { name: "Python", level: 90, category: "backend" },
   { name: "C++", level: 60, category: "backend" },
   { name: "C", level: 60, category: "backend" },
@@ -23,6 +24,14 @@ const skills = [
   { name: "Entrepreneurship", level: 95, category: "business" },
   { name: "Web Hosting / Portfolio Building", level: 80, category: "tools" },
   { name: "Soldering / Circuit Building", level: 75, category: "hardware" },
+  { name: "Node.js", level: 85, category: "backend" },
+  { name: "Express.js", level: 85, category: "backend" },
+  { name: "PostgreSQL", level: 80, category: "backend" },
+  { name: "Neon (Postgres Hosting)", level: 75, category: "tools" },
+  { name: "Vite", level: 85, category: "frontend" },
+  { name: "Render (Deployment)", level: 80, category: "tools" },
+  { name: "GitHub Pages", level: 80, category: "tools" },
+  { name: "RESTful API Design", level: 85, category: "backend" },
 ];
 
 const categories = ["all", "frontend", "backend", "tools", "hardware", "ai/ml", "soft", "business"]
