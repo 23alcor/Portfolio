@@ -5,7 +5,7 @@ const projects = [
     id: 3,
     title: "Notion Webhook Server",
     description:
-      "Notion Automation Server",
+      "A FastAPI server that listens for Notion webhook events and automates workspace tasks in real time. Uses OAuth for secure authentication and is deployed behind Cloudflare, turning manual Notion updates into automated, event-driven workflows.",
     image: "/Portfolio/projects/project3.png",
     tags: ["Python, FastAPI, Cloudflare, OAuth"],
     githubUrl: "https://github.com/23alcor/Notion-Webhook-server",
@@ -14,7 +14,7 @@ const projects = [
     id: 3,
     title: "Facial Recognition Door Lock",
     description:
-      "Vision-Based Facial Recognition Access Control System",
+      "A real-time facial-recognition door lock built in Java with OpenCV and Pi4J. Detects and identifies faces on a Raspberry Pi, then drives a servo and LEDs to unlock for enrolled users and stay locked for everyone else, all fully on-device.",
     image: "/Portfolio/projects/project4.png",
     tags: ["Java, OpenCV, Pi4J, Raspberry Pi"],
     githubUrl: "https://github.com/23alcor/facial-recognition-door-lock",
