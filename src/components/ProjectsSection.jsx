@@ -3,13 +3,21 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 3,
-    title: "Notion MCP",
+    title: "Notion Webhook Server",
     description:
       "Notion Automation Server",
     image: "/Portfolio/projects/project3.png",
-    tags: ["Javascript, React"],
-    demoUrl: "https://23alcor.github.io/UniversityToDo/",
-    githubUrl: "https://github.com/23alcor/UniversityToDo",
+    tags: ["Python, FastAPI, Cloudflare, OAuth"],
+    githubUrl: "https://github.com/23alcor/Notion-Webhook-server",
+  },
+{
+    id: 3,
+    title: "Facial Recognition Door Lock",
+    description:
+      "Vision-Based Facial Recognition Access Control System",
+    image: "/Portfolio/projects/project4.png",
+    tags: ["Java, OpenCV, Pi4J, Raspberry Pi"],
+    githubUrl: "https://github.com/23alcor/facial-recognition-door-lock",
   },
   {
     id: 1,
@@ -21,16 +29,7 @@ const projects = [
     githubUrl:
       "https://github.com/23alcor/Legendary-Motorosports-Clone?tab=readme-ov-file",
   },
-  {
-    id: 2,
-    title: "Job Board Api",
-    description:
-      "A full-stack job board web app built with React, Tailwind CSS, Node.js, and PostgreSQL, featuring real-time search, RESTful API integration, and responsive design. Demonstrates proficiency in full-stack development, database design, and deploying modern web applications using GitHub Pages and Render..",
-    image: "/Portfolio/projects/project2.png",
-    tags: ["Node.js, React, REST API, Postgresql"],
-    demoUrl: "https://23alcor.github.io/job-board-project/",
-    githubUrl: "https://github.com/23alcor/job-board-project",
-  },
+
 
 ];
 
