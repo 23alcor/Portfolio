@@ -1,4 +1,4 @@
-import { Briefcase, Code, User } from "lucide-react"
+import { Briefcase, Code, BrainCircuit } from "lucide-react"
 
 export const AboutSection = () => {
   return (
@@ -10,14 +10,14 @@ export const AboutSection = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
-          <h3 className="text-2xl font-semibold">Passionate Web Developer & Tech Creator</h3>
+          <h3 className="text-2xl font-semibold">Software Engineer & Computer Engineering Senior</h3>
 
           <p className="text-muted-foreground">
-            I am dedicated to crafting sleek, responsive digital experiences. I love turning ideas into interactive web apps that blend clean design with powerful functionality.
+            I'm a senior Computer Engineering student at Manhattan University (B.S. expected May 2027) who builds software end to end — from React front-ends to Python/SQL data pipelines and machine learning models. I care most about writing clean, reliable code that ships and solves real problems.
           </p>
 
           <p className="text-muted-foreground">
-          With a strong foundation in JavaScript, React, and modern web technologies, I build projects that are both scalable and engaging. I’m always exploring new frameworks and design patterns to stay ahead in a fast-paced tech landscape. Whether it's front-end UI or back-end logic, I aim to deliver thoughtful, high-quality code that makes an impact.
+            As an engineering co-op at Con Edison, I build and containerize Python and SQL data-processing pipelines for transformer failure analysis. As an undergraduate researcher, I lead a team developing PyTorch model-training workflows for adversarially robust machine learning — work that has produced two published papers, with ongoing research in HPC and parallel GPU computing. Alongside that, I run my own business and ship side projects across the full stack.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -37,19 +37,19 @@ export const AboutSection = () => {
                 <Code className="h-6 w-6 text-primary"/>
               </div>
               <div className="text-left">
-                <h4 className='font-semibold text-lg'> Web Development </h4>
-                <p className="text-muted-foreground">I build responsive and dynamic websites that deliver smooth user experiences across all devices.</p>
+                <h4 className='font-semibold text-lg'> Full-Stack Development </h4>
+                <p className="text-muted-foreground">I build complete applications with React, Node.js, FastAPI, and PostgreSQL — from responsive UIs to REST APIs and deployment.</p>
               </div>
             </div>
           </div>
           <div className="gradient-border p-6 card-hover">
             <div className="flex items-start gap-4">
               <div className="p-3 rounded-full bg-primary/10">
-                <User className="h-6 w-6 text-primary"/>
+                <BrainCircuit className="h-6 w-6 text-primary"/>
               </div>
               <div className="text-left">
-                <h4 className='font-semibold text-lg'> Person </h4>
-                <p className="text-muted-foreground">Outside of coding, I run a small business, blending creativity with hands-on problem solving.</p>
+                <h4 className='font-semibold text-lg'> ML & Data Engineering </h4>
+                <p className="text-muted-foreground">I develop PyTorch model-training and data pipelines with Python, pandas, and NumPy — published research in adversarially robust machine learning.</p>
               </div>
             </div>
           </div>
@@ -59,8 +59,8 @@ export const AboutSection = () => {
                 <Briefcase className="h-6 w-6 text-primary"/>
               </div>
               <div className="text-left">
-                <h4 className='font-semibold text-lg'> Current </h4>
-                <p className="text-muted-foreground">I'm a junior Computer Engineering student at Manhattan College with a passion for web development and technology. I enjoy building clean, responsive applications and continuously expanding my skills in software, electrical, and systems engineering.</p>
+                <h4 className='font-semibold text-lg'> Engineering Co-Op @ Con Edison </h4>
+                <p className="text-muted-foreground">I build Python, SQL, and Docker data-processing and classification pipelines for transformer failure analysis, supporting engineering decisions at scale.</p>
               </div>
             </div>
           </div>

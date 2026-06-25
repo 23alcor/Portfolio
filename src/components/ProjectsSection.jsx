@@ -2,6 +2,16 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    id: 3,
+    title: "Notion MCP",
+    description:
+      "Notion Automation Server",
+    image: "/Portfolio/projects/project3.png",
+    tags: ["Javascript, React"],
+    demoUrl: "https://23alcor.github.io/UniversityToDo/",
+    githubUrl: "https://github.com/23alcor/UniversityToDo",
+  },
+  {
     id: 1,
     title: "Legendary Motorsports Clone",
     description: "A front-end clone of GTA V’s Legendary Motorsport website built using HTML, CSS, and JavaScript. Features custom vehicle data sourced from in-game screenshots, showcasing skills in responsive UI design, DOM manipulation, and dynamic data rendering without frameworks..",
@@ -21,16 +31,7 @@ const projects = [
     demoUrl: "https://23alcor.github.io/job-board-project/",
     githubUrl: "https://github.com/23alcor/job-board-project",
   },
-  {
-    id: 3,
-    title: "ToDo App",
-    description:
-      "A dynamic job board application built with React, featuring real-time job search, API integration, and responsive design. Demonstrates proficiency in component-based architecture, state management with hooks, and modern UI development using Tailwind CSS.",
-    image: "/Portfolio/projects/project3.png",
-    tags: ["Javascript, React"],
-    demoUrl: "https://23alcor.github.io/UniversityToDo/",
-    githubUrl: "https://github.com/23alcor/UniversityToDo",
-  },
+
 ];
 
 export const ProjectSection = () => {
