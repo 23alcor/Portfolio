@@ -19,7 +19,7 @@ export const HeroSection = () => {
           <a href="#projects" className="cosmic-button">
             View My Work
           </a>
-          <a href="/Portfolio/Ralphael_Resume.pdf" download className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
+          <a href="https://drive.google.com/file/d/1JOuJZjy3v5UeBL4XJ2SyaqhGz3ZqLhxP/view?usp=sharing" onClick={() => window.goatcounter && window.goatcounter.count({ path: "resume-download", title: "Resume download", event: true })} target="_blank" rel="noopener noreferrer" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
             Download Resume
           </a>
         </div>
