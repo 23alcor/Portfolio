@@ -9,6 +9,9 @@
   --color-primary-foreground: hsl(var(--primary-foreground));
 
   --color-card: hsl(var(--card));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
 
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
@@ -69,6 +72,10 @@
 
     --card: 0 0% 100%;
 
+    --muted-foreground: 215 16% 47%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+
     --primary: 250 47% 60%;
     --primary-foreground: 210 40% 98%;
 
@@ -80,6 +87,10 @@
     --foreground: 213 31% 91%;
 
     --card: 222 47% 8%;
+
+    --muted-foreground: 215 20% 65%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 213 31% 91%;
 
     --primary: 250 65% 65%;
     --primary-foreground: 213 31% 91%;

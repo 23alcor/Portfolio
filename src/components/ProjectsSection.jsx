@@ -10,15 +10,6 @@ const projects = [
     tags: ["Python, FastAPI, Cloudflare, OAuth"],
     githubUrl: "https://github.com/23alcor/Notion-Webhook-server",
   },
-{
-    id: 3,
-    title: "Facial Recognition Door Lock",
-    description:
-      "A real-time facial-recognition door lock built in Java with OpenCV and Pi4J. Detects and identifies faces on a Raspberry Pi, then drives a servo and LEDs to unlock for enrolled users and stay locked for everyone else, all fully on-device.",
-    image: "/Portfolio/projects/project4.png",
-    tags: ["Java, OpenCV, Pi4J, Raspberry Pi"],
-    githubUrl: "https://github.com/23alcor/facial-recognition-door-lock",
-  },
   {
     id: 1,
     title: "Legendary Motorsports Clone",
@@ -46,11 +37,16 @@ export const ProjectSection = () => {
           experience with both hardware and software development.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          className={`grid grid-cols-1 md:grid-cols-2 gap-8 ${
+            projects.length >= 3 ? "lg:grid-cols-3" : "max-w-2xl mx-auto"
+          }`}
+        >
           {projects.map((project, key) => (
             <div
               key={key}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+              onClick={() => window.open(project.githubUrl, "_blank", "noopener,noreferrer")}
+              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover cursor-pointer"
             >
               <div className="h-48 overflow-hidden">
                 <img
@@ -70,15 +66,17 @@ export const ProjectSection = () => {
                 <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
                 <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
                 <div className="flex justify-between items-center">
-                  <div className="flex space-x-3">
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      {" "}
-                      <ExternalLink size={20} />{" "}
-                    </a>
+                  <div className="flex space-x-3" onClick={(e) => e.stopPropagation()}>
+                    {project.demoUrl && (
+                      <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      >
+                        {" "}
+                        <ExternalLink size={20} />{" "}
+                      </a>
+                    )}
                     <a
                       href={project.githubUrl}
                       target="_blank"
