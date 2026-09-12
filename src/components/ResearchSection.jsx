@@ -9,7 +9,7 @@ const research = [
     title: "Adversarially Robust Industrial Control Systems",
     description:
       "Conference paper (IEEE CCWC 2026) — a generative purification pipeline for adversarially robust industrial control systems.",
-    image: "/Portfolio/projects/research1.png",
+    image: "/projects/research1.png",
     tags: ["Adversarial ML", "Security", "ICS", "Deep Learning"],
     status: "Published",
     affiliation: "IEEE CCWC 2026",
@@ -44,7 +44,7 @@ const research = [
     title: "HPC & Parallel GPU Computing for ML Training",
     description:
       "Summer research (Manhattan University) — an NSF ACCESS study of where distributed GPU training actually loses time, run on the Bridges-2 supercomputer.",
-    image: "/Portfolio/projects/research2.png",
+    image: "/projects/research2.png",
     tags: ["HPC", "CUDA", "GPU", "Parallel Computing"],
     status: "In progress",
     affiliation: "Summer research · Manhattan University · 2026 – present",
@@ -75,7 +75,7 @@ const research = [
     title: "Generalizing to Unseen Adversarial Attacks",
     description:
       "Conference paper (IEEE UEMCON 2026) — a denoising autoencoder purifier for industrial control system intrusion detection, measured against attacks it was never trained on.",
-    image: "/Portfolio/projects/research3.png",
+    image: "/projects/research3.png",
     tags: ["Adversarial ML", "Power Systems", "Robustness", "Deep Learning"],
     status: "Accepted",
     affiliation: "IEEE UEMCON 2026 · New York · October 2026",

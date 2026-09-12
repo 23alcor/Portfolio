@@ -6,7 +6,7 @@ const projects = [
     title: "Notion Webhook Server",
     description:
       "A FastAPI server that listens for Notion webhook events and automates workspace tasks in real time. Uses OAuth for secure authentication and is deployed behind Cloudflare, turning manual Notion updates into automated, event-driven workflows.",
-    image: "/Portfolio/projects/project3.png",
+    image: "/projects/project3.png",
     tags: ["Python, FastAPI, Cloudflare, OAuth"],
     githubUrl: "https://github.com/23alcor/Notion-Webhook-server",
   },
@@ -14,7 +14,7 @@ const projects = [
     id: 1,
     title: "Legendary Motorsports Clone",
     description: "A front-end clone of GTA V’s Legendary Motorsport website built using HTML, CSS, and JavaScript. Features custom vehicle data sourced from in-game screenshots, showcasing skills in responsive UI design, DOM manipulation, and dynamic data rendering without frameworks..",
-    image: "/Portfolio/projects/project1.png",
+    image: "/projects/project1.png",
     tags: ["HTML, CSS, Javascript"],
     demoUrl: "https://23alcor.github.io/Legendary-Motorosports-Clone/",
     githubUrl:
