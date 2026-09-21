@@ -2,6 +2,15 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    id: 2,
+    title: "BerLabs — AI Newsletter Platform",
+    description:
+      "A full-stack AI-assisted newsletter platform that collects AI news from 20+ sources via RSS, clusters related coverage, and generates editorial summaries with the OpenAI API. Includes a private editorial dashboard with importance ranking and a double opt-in subscriber system, deployed on Next.js and Cloudflare Workers/D1.",
+    image: "/projects/berlabs.png",
+    tags: ["Next.js, React, TypeScript, Cloudflare, OpenAI"],
+    demoUrl: "https://news.berlabs.dev",
+  },
+  {
     id: 3,
     title: "Notion Webhook Server",
     description:
@@ -45,7 +54,7 @@ export const ProjectSection = () => {
           {projects.map((project, key) => (
             <div
               key={key}
-              onClick={() => window.open(project.githubUrl, "_blank", "noopener,noreferrer")}
+              onClick={() => window.open(project.demoUrl || project.githubUrl, "_blank", "noopener,noreferrer")}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover cursor-pointer"
             >
               <div className="h-48 overflow-hidden">
@@ -77,14 +86,16 @@ export const ProjectSection = () => {
                         <ExternalLink size={20} />{" "}
                       </a>
                     )}
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      {" "}
-                      <Github size={20} />{" "}
-                    </a>
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      >
+                        {" "}
+                        <Github size={20} />{" "}
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
