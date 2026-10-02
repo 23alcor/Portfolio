@@ -11,6 +11,15 @@ const projects = [
     demoUrl: "https://news.berlabs.dev",
   },
   {
+    id: 4,
+    title: "Token Usage — AI Capacity Planner",
+    description:
+      "A local-first macOS app that shows how much of your AI subscription capacity is left before you start a big task. A Rust collector normalizes Claude Code usage readings into separate five-hour and weekly windows with reset times, and a React dashboard in a Tauri shell displays them. Missing data is shown as unavailable rather than zero, and no prompts or credentials are ever collected.",
+    image: "/projects/token-usage.png",
+    tags: ["Tauri, Rust, React, TypeScript"],
+    githubUrl: "https://github.com/23alcor/Usage-Token-Visualizer",
+  },
+  {
     id: 3,
     title: "Notion Webhook Server",
     description:
