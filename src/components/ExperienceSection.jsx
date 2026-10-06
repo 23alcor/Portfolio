@@ -1,5 +1,7 @@
-import { FlaskConical, Bot, Users, Cpu } from "lucide-react";
+import { Link } from "react-router-dom";
+import { ArrowRight, FlaskConical, Bot, Users, Cpu } from "lucide-react";
 import conEdLogo from "../assets/coned_logo.png";
+import ralphCustomsLogo from "../assets/ralph_customs_logo.png";
 
 const workHistory = [
   {
@@ -60,6 +62,20 @@ const workHistory = [
       },
     ],
   },
+  {
+    role: "Founder & Owner, Automotive Window Tinting",
+    org: "Ralph Customs",
+    location: "Yonkers, NY",
+    period: "May 2023 – Aug 2025",
+    logo: ralphCustomsLogo,
+    logoFill: true,
+    link: { href: "/ralph-customs/", label: "See the original website" },
+    points: [
+      "Founded and ran a mobile and drop-off window tinting business serving Westchester, NYC, and Long Island, installing Geoshield carbon and nano-ceramic films.",
+      "Built and maintained the business website on Squarespace, with pricing by vehicle size and film type, tint-shade examples, a carbon-vs-ceramic FAQ, and an online quote request form.",
+      "Handled quoting, scheduling, deposits, payments, and customer communication, and marketed the business on Instagram, TikTok, and Facebook.",
+    ],
+  },
 ];
 
 const activities = [
@@ -91,11 +107,17 @@ const ExperienceCard = ({ item }) => {
       <div className="flex flex-col md:flex-row md:items-start gap-4">
         <div
           className={`rounded-full flex items-center justify-center flex-shrink-0 ${
-            item.logo ? "h-12 w-12 bg-white" : "p-3 w-fit h-fit bg-primary/10"
+            item.logo
+              ? `h-12 w-12 ${item.logoFill ? "overflow-hidden" : "bg-white"}`
+              : "p-3 w-fit h-fit bg-primary/10"
           }`}
         >
           {item.logo ? (
-            <img src={item.logo} alt={`${item.org} logo`} className="h-7 w-7 object-contain" />
+            <img
+              src={item.logo}
+              alt={`${item.org} logo`}
+              className={item.logoFill ? "h-full w-full object-cover" : "h-7 w-7 object-contain"}
+            />
           ) : (
             <Icon className="h-6 w-6 text-primary" />
           )}
@@ -132,6 +154,15 @@ const ExperienceCard = ({ item }) => {
                 </li>
               ))}
             </ul>
+          )}
+          {item.link && (
+            <Link
+              to={item.link.href}
+              className="mt-5 inline-flex items-center gap-1 font-medium text-primary hover:underline"
+            >
+              {item.link.label}
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </Link>
           )}
         </div>
       </div>

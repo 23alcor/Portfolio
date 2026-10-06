@@ -8,6 +8,10 @@
 // LinkedIn or Slack shows the paper instead of the generic site.
 // It also writes dist/404.html, so any other path still loads the app and
 // shows its "page not found" view.
+//
+// The Ralph Customs page gets the same treatment:
+//
+//   dist/ralph-customs/index.html  -> served at /ralph-customs/
 
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -18,6 +22,7 @@ import {
   research,
   researchPath,
 } from "../src/data/research.js";
+import { ralphCustomsPage } from "../src/data/ralphCustoms.js";
 
 const TITLE_TAG = /<title>[\s\S]*?<\/title>/;
 
@@ -50,6 +55,24 @@ const headTags = (entry) => {
   ].join("\n    ");
 };
 
+const ralphCustomsHeadTags = () => {
+  const page = ralphCustomsPage;
+  const url = SITE_URL + page.path;
+  return [
+    `<title>${escapeAttr(page.title)}</title>`,
+    `<meta name="description" content="${escapeAttr(page.description)}" />`,
+    `<link rel="canonical" href="${url}" />`,
+    `<meta property="og:type" content="website" />`,
+    `<meta property="og:site_name" content="${escapeAttr(AUTHOR)}" />`,
+    `<meta property="og:title" content="${escapeAttr(page.ogTitle)}" />`,
+    `<meta property="og:description" content="${escapeAttr(page.description)}" />`,
+    `<meta property="og:url" content="${url}" />`,
+    `<meta property="og:image" content="${SITE_URL}${page.ogImage}" />`,
+    `<meta name="twitter:card" content="summary_large_image" />`,
+    `<link rel="stylesheet" href="${escapeAttr(page.fontsHref)}" />`,
+  ].join("\n    ");
+};
+
 export function researchPages() {
   return {
     name: "research-pages",
@@ -73,6 +96,17 @@ export function researchPages() {
           template.replace(TITLE_TAG, () => headTags(entry))
         );
       }
+
+      const ralphDir = path.join(
+        options.dir,
+        ...ralphCustomsPage.path.split("/").filter(Boolean)
+      );
+      await fs.mkdir(ralphDir, { recursive: true });
+      await fs.writeFile(
+        path.join(ralphDir, "index.html"),
+        template.replace(TITLE_TAG, () => ralphCustomsHeadTags())
+      );
+
       await fs.writeFile(path.join(options.dir, "404.html"), template);
     },
   };

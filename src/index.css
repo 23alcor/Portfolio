@@ -13,6 +13,11 @@
   --color-secondary: hsl(var(--secondary));
   --color-secondary-foreground: hsl(var(--secondary-foreground));
 
+  /* Ralph Customs page (/ralph-customs/): the original site's colors. */
+  --color-rc-ink: #0c0b0b;
+  --color-rc-paper: #f0f0f0;
+  --color-rc-red: #bf1320;
+
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
   --animate-fade-in: fade-in 0.7s ease-out forwards;
@@ -163,6 +168,27 @@
 @utility meteor {
   @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+}
+
+/* Ralph Customs page: type styles from the original Squarespace site.
+   Archivo and Space Mono load from Google Fonts on that page only. */
+@utility rc-display {
+  font-family: "Archivo", "Arial Black", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+}
+
+@utility rc-mono {
+  font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: -0.02em;
+}
+
+@utility rc-bar {
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.12em;
 }
 
 #root {
