@@ -5,7 +5,7 @@
 //
 // Text fields can wrap code in backticks (`no_sync()`); the page renders it as code.
 
-export const SITE_URL = "https://portfolio.berlabs.dev";
+export const SITE_URL = "https://portfolio.alcoberlabs.xyz";
 export const SITE_TITLE = "Ralphael's Portfolio";
 export const AUTHOR = "Ralphael Alcober";
 
