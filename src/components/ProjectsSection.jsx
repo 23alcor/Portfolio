@@ -2,6 +2,15 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    id: 5,
+    title: "Confiance — XRPL Lending Platform",
+    description:
+      "A hackathon lending app on the XRP Ledger, built with a five-person team. I built the Express API and the underwriting engine: an OFAC sanctions screen, a soft credit pull blended with on-ledger history into a 0–100 score, risk-based pricing, and an NFT score passport. A human broker approves every loan, and each decision's hash is written to the ledger so anyone can audit it.",
+    image: "/projects/confiance.png",
+    tags: ["TypeScript, Express, XRPL, React, SQLite"],
+    githubUrl: "https://github.com/Jfrancisjr21/xrpl-hackathon",
+  },
+  {
     id: 2,
     title: "BerLabs — AI Newsletter Platform",
     description:
